@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vidintro",
+	"version": "${version}",
+	"name": "VidIntro",
+	"description": "This is a mod to play a custom video intro before loading the title screen",
+	"authors": [
+		"Greyxp1"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vidintro/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.greyxp.vidintro.VidIntro"
+		],
+		"client": [
+			"net.greyxp.vidintro.VidIntroClient"
+		],
+		"fabric-datagen": [
+			"net.greyxp.vidintro.VidIntroDataGenerator"
+		]
+	},
+	"mixins": [
+		"vidintro.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
